@@ -11,7 +11,7 @@ import os
 
 
 token = os.environ['token']
-chat_id = os.environ['chat_id'])
+chat_id = os.environ['chat_id']
 
 #create bot
 bot = telegram.Bot(token=token)
