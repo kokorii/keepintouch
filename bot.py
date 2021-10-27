@@ -2,13 +2,11 @@ import telegram
 import json
 import random
 
-#read token, chat_id
-with open("./token.txt") as f:
-    lines = f.readlines()
-    
-    
-token = lines[0].strip()
-chat_id = lines[1].strip()
+# #read token, chat_id
+# with open("./token.txt") as f:
+#     lines = f.readlines()
+# token = lines[0].strip()
+# chat_id = lines[1].strip()
 
 #create bot
 bot = telegram.Bot(token=token)
