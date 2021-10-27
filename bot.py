@@ -2,9 +2,11 @@ import telegram
 
 with open("./token.txt") as f:
     lines = f.readlines()
-    token = lines[0].strip()
+    
+    
+token = lines[0].strip()
+chat_id = lines[1].strip()
 
 bot = telegram.Bot(token=token)
-chat_id = 571531564
 
-bot.sendMessage(chat_id=chat_id, text="what")
+bot.sendMessage(chat_id=chat_id, text="did it work?")
